@@ -190,6 +190,18 @@ end
 def big_shoe_rebounds
   #returns the number of rebounds of the player with the biggest shoe size
   game_hash
-  
+  shoe_sizes = []
+  game_hash.each do |home_or_away, key|
+    key[:players].each do |player|
+      shoe_sizes << player[:shoe]
+    end
+  end
 end
+
+
+
+
+
+
+
 
