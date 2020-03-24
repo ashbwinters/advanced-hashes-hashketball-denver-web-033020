@@ -63,7 +63,7 @@ def game_hash
       colors: ["Turquoise", "Purple"],
       players: [
         { player_name: "Jeff Adrien",
-          nuumber: 4,
+          number: 4,
           shoe: 18,
           points: 10,
           rebounds: 1,
@@ -73,7 +73,7 @@ def game_hash
           slam_dunks: 2 
         },
         { player_name: "Bismack Biyombo",
-          nuumber: 0,
+          number: 0,
           shoe: 16,
           points: 12,
           rebounds: 4,
@@ -83,7 +83,7 @@ def game_hash
           slam_dunks: 10 
         },
         { player_name: "DeSagna Diop",
-          nuumber: 2,
+          number: 2,
           shoe: 14,
           points: 24,
           rebounds: 12,
@@ -93,7 +93,7 @@ def game_hash
           slam_dunks: 5 
         },
         { player_name: "Ben Gordon",
-          nuumber: 8,
+          number: 8,
           shoe: 15,
           points: 33,
           rebounds: 3,
@@ -103,7 +103,7 @@ def game_hash
           slam_dunks: 0 
         },
         { player_name: "Kemba Walker",
-          nuumber: 33,
+          number: 33,
           shoe: 15,
           points: 6,
           rebounds: 12,
