@@ -145,7 +145,8 @@ def team_colors(team)
   answer = []
   answer = game_hash.reduce do |memo, key|
     if memo[key][:team_name] == team
-      memo = memo[key][:colors]
+      memo[key][:colors].each{|item|
+        memo << item}
     end
     memo
   end
