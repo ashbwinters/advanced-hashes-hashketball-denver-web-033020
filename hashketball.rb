@@ -1,7 +1,7 @@
 require "pry"
 
 def game_hash
-  game_hash = {
+  {
     home: {
       team_name: "Brooklyn Nets", 
       colors: ["Black", "White"],
@@ -142,7 +142,6 @@ end
 def team_colors(team)
   #knows the Brooklyn Nets colors are black and White
   game_hash
-  answer = []
   answer = game_hash.each do |key|
     if game_hash[key][:team_name] == team
       game_hash[key][:colors].each{|item|
