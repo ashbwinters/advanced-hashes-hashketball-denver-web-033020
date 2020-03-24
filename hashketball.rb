@@ -165,7 +165,7 @@ def player_numbers(players_name)
   game_hash.each do |home_or_away, key|
     key[:players].each do |name|
       if name[:player_name] == players_name
-        return name
+        return name[:number]
       end
     end
   end
@@ -174,6 +174,13 @@ end
 def player_stats(player_name)
   #returns all stats for a given player
   game_hash
+  game_hash.each do |home_or_away, key|
+    key[:players].each do |name|
+     if name[:player_name] == players_name
+       return name
+     end
+    end
+  end
 end
 
 def big_shoe_rebounds
