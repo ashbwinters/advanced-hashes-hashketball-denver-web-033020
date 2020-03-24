@@ -154,9 +154,11 @@ end
 def team_names
   #returns the team's names
   game_hash
-  game_hash.each do |home_or_away|
-    p home_or_away[:team_name]
+  teams = []
+  game_hash.each do |home_or_away, key|
+    teams << home_or_away[:team_name]
   end
+  teams
 end
 
 def player_numbers(team)
