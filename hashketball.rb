@@ -121,9 +121,9 @@ def num_points_scored(players_name)
   # knows the number of points scored by each player
   game_hash
   game_hash.each do |home_or_away, key|
-    game_hash[key][:players].each do |player|
-      if [key][:player_name] == players_name
-      [:points]
+    key[:players].each do |name|
+      if name == players_name
+      return name[:points]
       end
     end
   end
