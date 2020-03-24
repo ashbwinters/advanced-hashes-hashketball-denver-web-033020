@@ -143,7 +143,7 @@ def team_colors(team)
   #knows the Brooklyn Nets colors are black and White
   game_hash
   answer = []
-  answer = game_hash.reduce do |memo, key|
+  answer = game_hash.reduce do |key|
     if memo[key][:team_name] == team
       memo[key][:colors].each{|item|
         memo << item}
