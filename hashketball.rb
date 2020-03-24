@@ -156,7 +156,7 @@ def team_names
   game_hash
   teams = []
   game_hash.each do |home_or_away, key|
-    teams << home_or_away[:team_name]
+    teams << key[:team_name]
   end
   teams
 end
