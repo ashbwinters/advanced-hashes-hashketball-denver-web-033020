@@ -171,7 +171,7 @@ def player_numbers(players_name)
   end
 end
 
-def player_stats(player_name)
+def player_stats(players_name)
   #returns all stats for a given player
   game_hash
   game_hash.each do |home_or_away, key|
