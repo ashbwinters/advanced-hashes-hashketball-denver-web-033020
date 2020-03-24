@@ -144,13 +144,11 @@ end
 def team_colors(team)
   #knows the Brooklyn Nets colors are black and White
   game_hash
-  answer = game_hash.each do |key|
-    if game_hash[key][:team_name] == team
-      game_hash[key][:colors].each{|item|
-        answer << game_hash[key][:colors][item]}
+  game_hash.each do |home_or_away, key|
+    if key[:team_name] == team
+      return key[:colors]
     end
   end
-  answer
 end
 
 def team_names
