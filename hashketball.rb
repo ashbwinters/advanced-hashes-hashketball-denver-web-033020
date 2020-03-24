@@ -153,11 +153,10 @@ end
 
 def team_names
   #returns the team's names
-#  game_hash
-  
-#  game_data.each do |index|
-#    p index
-#  end
+  game_hash
+  game_data.each do |home_or_away|
+    p home_or_away
+  end
 end
 
 def player_numbers(player_name)
