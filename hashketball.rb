@@ -154,7 +154,7 @@ end
 def team_names
   #returns the team's names
   game_hash
-  game_data.each do |home_or_away|
+  game_hash.each do |home_or_away|
     p home_or_away
   end
 end
