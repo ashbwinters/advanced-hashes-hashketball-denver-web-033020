@@ -181,7 +181,7 @@ def player_stats(players_name)
   game_hash.each do |home_or_away, key|
     key[:players].each do |name|
      if name[:player_name] == players_name
-      name.shift
+      name.drop(1)
      end
     end
   end
